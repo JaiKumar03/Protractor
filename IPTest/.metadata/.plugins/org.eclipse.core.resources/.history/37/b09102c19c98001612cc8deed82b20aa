@@ -1,0 +1,74 @@
+describe('IP Login sceanrio', function() {
+	
+	
+  it('User Should able to login', function() {
+	  
+    browser.get('https://website-investmentplannerwebeunqa.azurewebsites.net/Login');
+
+    element(by.model('groupName')).sendKeys('sp26 test');
+    
+    element(by.model('userName')).sendKeys('test1');
+    
+    element(by.model('password')).sendKeys('fedby123');
+    
+    element(by.className('btn btn-lg btn-primary ng-isolate-scope')).click();  
+  
+    
+  });
+
+  
+  it('validate Client List Page', function() {
+	  
+     var greeting = element(by.className('page-header'));
+
+     expect(greeting.getText()).toEqual('Clients');
+	    
+	 element(by.xpath('//p')).getText().then(function(text){
+	    
+	 console.log(text);
+	  
+	 })
+  });
+	  
+  
+  it('Validate Search Client', function() {
+	  
+	element(by.model('search')).sendKeys('Jey');
+	
+	element(by.className('ng-binding')).click();
+	
+	element(by.xpath("//a[.='Client Details']")).click();
+	
+	element(by.className('ng-binding')).getText().then(function(text){
+	    
+	console.log(text);
+		  
+     })
+	
+ });
+  
+
+  it('Validate Edit Client', function() {
+	
+	
+	element(by.xpath("//span[.='Edit Client']")).click();
+	
+	element(by.model('client.details.firstName')).clear();
+	
+	element(by.className('help-block')).getText().then(function(text){
+	    
+	console.log(text);
+			  
+	 })
+	
+	element(by.xpath("//span[.='Cancel']")).click();
+		
+	element(by.className('ng-binding')).getText().then(function(text){
+		    
+	console.log(text);
+			  
+     })
+		
+	});
+  
+});
