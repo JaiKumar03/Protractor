@@ -1,1 +1,0 @@
-INDEX VERSION 1.129+E:\ProtractorAutomation\IPTest\.metadata\.plugins\org.eclipse.jdt.core

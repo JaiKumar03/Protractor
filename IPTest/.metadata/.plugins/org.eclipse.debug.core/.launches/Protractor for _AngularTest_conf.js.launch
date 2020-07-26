@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<launchConfiguration type="org.eclipse.angularjs.core.protractor">
-<stringAttribute key="cli_file" value="${workspace_loc:/AngularTest/node_modules/protractor/built/cli.js}"/>
-<stringAttribute key="debugger" value="ProgramNodejs"/>
-<stringAttribute key="nodeinstall" value="node-native"/>
-<stringAttribute key="nodepath" value="C:\Program Files\nodejs\node.exe"/>
-<stringAttribute key="org.eclipse.ui.externaltools.ATTR_LOCATION" value="${workspace_loc:/AngularTest/conf.js}"/>
-</launchConfiguration>

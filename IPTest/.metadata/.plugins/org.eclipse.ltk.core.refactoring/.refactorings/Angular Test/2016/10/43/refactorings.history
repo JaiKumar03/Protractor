@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Rename resource &apos;Angular Test/IP_Login.js&apos; to &apos;login.js&apos;" description="Rename resource &apos;IP_Login.js&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="IP_Login.js" name="login.js" stamp="1477162018104" updateReferences="true"/>
-</session>
